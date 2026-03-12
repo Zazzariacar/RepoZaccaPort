@@ -1,4 +1,4 @@
-﻿// scripts.js
+// scripts.js
 // Interazioni leggere: smooth scroll, anno dinamico, lightbox accessibile per i progetti.
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,7 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Recupera dati dalla card
     const img = card.querySelector("img");
     const title = card.querySelector("h3")?.textContent || "";
-    const desc = Array.from(card.querySelectorAll("p")).map(p => p.textContent).join("\n\n");
+    let desc = Array.from(card.querySelectorAll("p")).map(p => p.textContent).join("\n\n");
+
+    // Dettaglio strumenti per il primo progetto
+    if (title === "Stanza isometrica") {
+      const toolsText = "Blender (Cycles) per la modellazione e il rendering, Shader Editor per i materiali procedurali, Adobe Photoshop (o il software che usi) per il post-processing.";
+      desc = `${desc}\n\n${toolsText}`;
+    }
 
     body.innerHTML = `
       ${img ? `<img src="${img.src}" alt="${img.alt || title}" style="width:100%;height:auto;border-radius:8px;object-fit:cover">` : ""}
