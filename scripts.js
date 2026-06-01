@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Dettaglio strumenti per il primo progetto
     if (title === "Stanza isometrica") {
-      const toolsText = "Blender (Cycles) per la modellazione e il rendering, Shader Editor per i materiali procedurali, Adobe Photoshop (o il software che usi) per il post-processing.";
+      const toolsText = "Blender (Cycles) per la modellazione e il rendering, Shader Editor per i materiali procedurali, Adobe Photoshop per il post-processing.";
       desc = `${desc}\n\n${toolsText}`;
     }
 
