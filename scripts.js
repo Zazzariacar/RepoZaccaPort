@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
       desc = `${desc}\n\n${toolsText}`;
     }
 
+    // Dettaglio strumenti per il secondo progetto
+    if (title === "Penna magica — Witch Hat Atelier") {
+      const toolsText = "Strumenti utilizzati: Blender per la modellazione, UV unwrapping e rendering con Cycles. Materiali procedurali per la texture del legno e shader personalizzati per le incisioni.";
+      desc = `${desc}\n\n${toolsText}`;
+    }
+
     body.innerHTML = `
       ${img ? `<img src="${img.src}" alt="${img.alt || title}" style="width:100%;height:auto;border-radius:8px;object-fit:cover">` : ""}
       <h3 style="margin:0.25rem 0">${title}</h3>
