@@ -28,6 +28,7 @@
         <ul class="nav-list">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROGETTI</a></li>
+          <li><a href="#commissions">COMMISSIONI</a></li>
           <li><a href="#contact">CONTATTI</a></li>
         </ul>
       </nav>
@@ -103,6 +104,48 @@
         </article>
 
       </div>
+    </section>
+
+    <!-- Sezione Commissioni -->
+    <section id="commissions" class="container commissions">
+      <h2>Commissioni</h2>
+      <p class="commissions-intro">Hai in mente un'idea per un progetto 3D, un asset per il tuo videogioco o un prototipo interattivo in Unity? Compila il modulo qui sotto con i dettagli del tuo progetto. Ti risponderò via email con una proposta!</p>
+      
+      <form action="https://api.web3forms.com/submit" method="POST" class="commission-form">
+        <!-- Chiave di accesso Web3Forms integrata -->
+        <input type="hidden" name="access_key" value="c11dd2f4-7d18-46de-aac8-ebb042cf1b13">
+        
+        <div class="form-group">
+          <label for="form-name">Nome / Azienda</label>
+          <input type="text" id="form-name" name="name" placeholder="Il tuo nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="form-email">Indirizzo Email</label>
+          <input type="email" id="form-email" name="email" placeholder="nome@esempio.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="form-type">Tipo di Progetto</label>
+          <select id="form-type" name="project_type" required>
+            <option value="" disabled selected>Seleziona un'opzione...</option>
+            <option value="Modellazione 3D / Asset">Modellazione 3D / Asset di gioco</option>
+            <option value="Sviluppo Unity">Sviluppo / Logica Unity</option>
+            <option value="Sito Web / Front-end">Sviluppo Web / Front-end</option>
+            <option value="Altro">Altro (consulenza, collaborazioni...)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="form-message">Descrizione del Progetto e Budget indicativo</label>
+          <textarea id="form-message" name="message" rows="5" placeholder="Descrivi la tua idea, lo stile visivo richiesto, le tempistiche di consegna e qualsiasi altro dettaglio utile..." required></textarea>
+        </div>
+        
+        <!-- Protezione invisibile dai bot spam (Honeypot) -->
+        <input type="checkbox" name="botcheck" class="hidden-honeypot" style="display: none;">
+        
+        <button type="submit" class="cta">INVIA RICHIESTA</button>
+      </form>
     </section>
 
     <section id="contact" class="container contact">
