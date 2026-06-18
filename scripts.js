@@ -86,6 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
       desc += "\n\nStrumenti utilizzati: Blender per la modellazione, UV unwrapping e rendering con Cycles. Materiali procedurali per la texture del legno e shader personalizzati per le incisioni.";
     } else if (title === "Set Katana e Maschera — Vita da Slime") {
       desc += "\n\nStrumenti utilizzati: Modellazione 3D interamente realizzata in Blender (retopologia ottimizzata per la maschera, materiali procedurali metallici avanzati per la lama e l'Hamon), con post-processing tramite intelligenza artificiale per evidenziare i dettagli di finitura, le luci atmosferiche e i riflessi sul metallo.";
+    } else if (title === "Tōrō | Blender") {
+      desc += "\n\nStrumenti utilizzati: Blender per la modellazione e i materiali procedurali (granito), Shader Editor, rendering Cycles e Adobe Photoshop per il post-processing.";
     }
 
     body.innerHTML = `

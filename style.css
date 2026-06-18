@@ -30,7 +30,7 @@ html, body {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background-color: var(--bg-color); /* Solo sfondo a tinta unita, elimina qualsiasi ripetizione */
+  background-color: var(--bg-color); 
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +39,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Effetto bloom che segue il mouse, armonizzato in ciano */
+
 .cursor-bloom {
   position: fixed;
   top: 0;
@@ -54,7 +54,7 @@ body {
   will-change: transform;
 }
 
-/* Struttura comune */
+
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -64,7 +64,7 @@ body {
   z-index: 1;
 }
 
-/* Header */
+
 .site-header {
   background: transparent;
   padding: 1.5rem 0;
@@ -107,7 +107,7 @@ body {
   color: var(--accent-gold);
 }
 
-/* Hero Section */
+
 .hero {
   padding: 5rem 0 3rem;
 }
@@ -127,7 +127,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Allineamento flessibile dei pulsanti */
+
 .hero-buttons {
   display: flex;
   gap: 0.75rem;
@@ -155,7 +155,7 @@ body {
   color: var(--accent-gold-hover);
 }
 
-/* Stile pulsante Scarica CV */
+
 .cta-secondary {
   display: inline-block;
   padding: 0.65rem 1.5rem;
@@ -176,7 +176,7 @@ body {
   color: var(--text-primary);
 }
 
-/* Sezioni generiche */
+
 section {
   border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
@@ -190,7 +190,7 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
-/* About Section */
+
 .about {
   padding: 3.5rem 0;
 }
@@ -226,7 +226,7 @@ section h2 {
   color: var(--text-primary);
 }
 
-/* Projects Section */
+
 .projects {
   padding: 3.5rem 0;
 }
@@ -255,7 +255,7 @@ section h2 {
   cursor: pointer;
 }
 
-/* Gestione delle immagini con effetto sfocatura */
+
 .project-image-wrapper {
   width: 100%;
   height: 130px;
@@ -301,14 +301,14 @@ section h2 {
   transition: color 0.2s ease;
 }
 
-/* Hover globale sulla card */
+
 .project-card:hover:not(.upcoming) {
   transform: translateY(-4px);
   border-color: var(--card-border-hover);
   box-shadow: 0 8px 30px rgba(59, 241, 218, 0.08);
 }
 
-/* Rende nitida l'immagine al passaggio del mouse sulla card */
+
 .project-card:hover .project-preview-img {
   filter: blur(0px) brightness(0.95);
   transform: scale(1);
@@ -318,7 +318,7 @@ section h2 {
   color: var(--accent-gold-hover) !important;
 }
 
-/* Prossimamente Card */
+
 .project-card.upcoming {
   border: 1px dashed rgba(255, 255, 255, 0.08);
   background: transparent;
@@ -339,7 +339,7 @@ section h2 {
   font-weight: 300;
 }
 
-/* Sezione Commissioni */
+
 .commissions {
   padding: 3.5rem 0;
 }
@@ -391,7 +391,7 @@ section h2 {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #627585; /* Grigio ardesia leggibile */
+  color: #627585; 
 }
 
 .form-group input:focus,
@@ -402,7 +402,7 @@ section h2 {
   box-shadow: 0 0 10px rgba(59, 241, 218, 0.15);
 }
 
-/* Custom per la freccia della select su browser moderni, armonizzata in ciano */
+
 .form-group select {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233bf1da' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
